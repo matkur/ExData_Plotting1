@@ -27,7 +27,7 @@ png(
 par(mfrow=c(2,2))
 
 #Upper left
-plot(data2$DateTime,data2$Global_active_power,ylab='Global Active Power (kilowatts)', xlab='', type='l')
+plot(data2$DateTime,data2$Global_active_power,ylab='Global Active Power', xlab='', type='l')
 
 #upper right
 plot(data2$DateTime,data2$Voltage,xlab='datetime',ylab='Voltage',type='l')
@@ -36,7 +36,7 @@ plot(data2$DateTime,data2$Voltage,xlab='datetime',ylab='Voltage',type='l')
 plot(data2$DateTime,data2$Sub_metering_1,ylab='Energy sub metering', xlab='', type='l',col='black', lty="solid")
 lines(data2$DateTime,data2$Sub_metering_2,col='red', lty="solid")
 lines(data2$DateTime,data2$Sub_metering_3,col='blue', lty="solid")
-legend('topright',c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),col=c("black","red","blue"),lty=c('solid','solid','solid'))
+legend('topright',c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),col=c("black","red","blue"),lty=c('solid','solid','solid'),bty='n')
 
 #bottom right
 plot(data2$DateTime,data2$Global_reactive_power,xlab='datetime',ylab='Global_reactive_power',type='l')

@@ -1,6 +1,3 @@
-# change the Locale from my native locale to get the abbreviations 'Thu' ,'Fri', and 'Sat' on the graph
-Sys.setlocale("LC_TIME", "English")
-
 library(datasets)
 
 #read the file

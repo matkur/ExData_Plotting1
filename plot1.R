@@ -19,5 +19,5 @@ png(
     units = "px",
 )
 
-hist(data2$Global_active_power,main="Global Activce Power", xlab="Global Activce Power (kilowatts)", col="red") 
+hist(data2$Global_active_power,main="Global Active Power", xlab="Global Active Power (kilowatts)", col="red") 
 dev.off()
